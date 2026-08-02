@@ -2,8 +2,8 @@ CREATE TABLE Clients (
   
   	client_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 	  client_name VARCHAR(255) NOT NULL,	  
-  	client_surname VARCHAR(255),
-  	city VARCHAR(255)
+  	client_surname VARCHAR(255) NOT NULL,
+  	city VARCHAR(255) NOT NULL
     
 );
 
