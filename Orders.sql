@@ -13,8 +13,8 @@ CREATE TABLE Orders (
   
 );
 
-INSERT INTO Ordersnigga (order_id, client_id, item_id, order_date)
-VALUES (1, 113, 1002, '2026-08-03'),
+INSERT INTO Orders (order_id, client_id, item_id, order_date)
+VALUES 	 (1, 113, 1002, '2026-08-03'),
 	     (2, 104, 1011, '2026-08-03'),
 	     (3, 110, 1007, '2026-08-03'),
 	     (4, 114, 1007, '2026-08-03'),
