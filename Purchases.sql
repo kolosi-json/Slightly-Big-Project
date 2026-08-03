@@ -19,3 +19,15 @@ VALUES 	 (1, 113, 1002, '2026-08-03'),
 	     (3, 110, 1007, '2026-08-03'),
 	     (4, 114, 1007, '2026-08-03'),
 	     (5, 114, 1004, '2026-08-03');
+
+SELECT 	Clients.client_id, 
+		Clients.client_name, 
+		Clients.client_surname, 
+		Items.item_id, 
+		Items.item_name, 						
+        Purchases.purchase_date	
+
+FROM Purchases
+
+LEFT JOIN Clients ON Clients.client_id = Purchases.client_id
+LEFT JOIN Items ON Items.item_id = Purchases.item_id;
