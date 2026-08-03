@@ -2,5 +2,8 @@ CREATE TABLE orders(
 
   order_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
   client_id INT FOREIGN KEY NOT NULL,
-  item_id
+  item_id INT FOREIGN KEY NOT NULL,
+  order_date DATE NOT NULL
+
+  );
   
