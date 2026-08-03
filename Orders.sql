@@ -1,7 +1,7 @@
 CREATE TABLE ordersnigga (
 
   order_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-  order_number INT AUTO_INCREMENT NOT NULL
+  order_number INT NOT NULL,
   client_id INT NOT NULL,
   item_id INT NOT NULL,
   order_date DATE NOT NULL,
@@ -10,7 +10,6 @@ CREATE TABLE ordersnigga (
   	REFERENCES Clients(client_id),
   CONSTRAINT fk_item
   	FOREIGN KEY (item_id)
-  	REFERENCES Items(item_id)
+    REFERENCES Items(item_id)
   
 );
-  
